@@ -10,6 +10,5 @@ app.use(express.json());
 
 // Routes
 app.use("/api", resumeParserRoute);
-//http://localhost:3000/api
 
 export {app}

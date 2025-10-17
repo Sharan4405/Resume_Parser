@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,18 +15,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Sharan4405/Resume_Parser/issues"
   },
   "homepage": "https://github.com/Sharan4405/Resume_Parser#readme",
   "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mammoth": "^1.10.0",
     "multer": "^2.0.2",
     "node-fetch": "^3.3.2",
-    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.4.296",
     "tesseract.js": "^6.0.1"
   },
   "devDependencies": {
