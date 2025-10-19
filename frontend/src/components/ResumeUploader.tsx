@@ -68,7 +68,7 @@ export default function ResumeUploader({ setParsedData, setIsLoading, isLoading 
     formData.append('resume', file);
 
     try {
-      const response = await fetch('http://localhost:3000/api/parse-resume', {
+      const response = await fetch(`${process.env.Backend_url}/api/parse-resume`, {
         method: 'POST',
         body: formData,
       });
